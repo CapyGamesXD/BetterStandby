@@ -213,3 +213,8 @@ button {
 		transform: scale(1);
 	}
 }
+
+img {
+	image-rendering: pixelated;
+	width: 300px;
+}
