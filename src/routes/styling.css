@@ -197,7 +197,10 @@ a {
 	transition: 0.2s;
 }
 button {
-	transition: 0.2s;
+	transition: transform 0.2s ease;
+}
+a {
+	transition: transform 0.2s ease;
 }
 
 @media (hover: hover) {

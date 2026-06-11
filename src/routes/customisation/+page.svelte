@@ -175,7 +175,7 @@
 		font-size: 20px;
 		font-weight: 600;
 		color: contrast-color(var(--accentColour));
-		border: 2px contrast-color(var(--accentColour)) solid;
+
 		padding: 3px 10px 5px 10px;
 		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
@@ -189,7 +189,8 @@
 		font-weight: 600;
 		color: rgb(95, 95, 95);
 		color: contrast-color(var(--accentColour));
-		border: 2px contrast-color(var(--accentColour)) solid;
+
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
 	.preview {
@@ -226,7 +227,7 @@
 
 	a {
 		color: contrast-color(var(--accentColour));
-		border: 2px contrast-color(var(--accentColour)) solid;
+
 		background-color: var(--accentColour);
 		width: 60px;
 		height: 30px;

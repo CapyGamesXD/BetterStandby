@@ -68,7 +68,7 @@
 	button {
 		width: 200px;
 		height: 40px;
-		background-color: rgb(127, 114, 199);
+		background-color: rgb(63, 63, 63);
 		color: white;
 		border-radius: 30px;
 		outline: none;
