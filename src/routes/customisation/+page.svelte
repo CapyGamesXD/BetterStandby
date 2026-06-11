@@ -37,7 +37,7 @@
 	<a href="/{page}" class="mb-2" onclick={saveChanges}>Save</a>
 	<h1 class="koulen">Customisation</h1>
 	<div class="divider"></div>
-	<a class="accentButton mt-2" href="/settings">Settings</a>
+	<a class="accentButton mt-2" href="/settings" onclick={saveChanges}>Settings</a>
 	<p class="mt-1">Scroll to the bottom to preview</p>
 	<div class="row mt-0 mb-4">
 		<button
@@ -113,17 +113,27 @@
 
 	<p class="mb-2 text-xl">Font:</p>
 	<select name="Fonts" bind:value={fontChoice}>
-		<option value="koulen">Koulen</option>
 		<option value="nunito">Nunito</option>
+		<option value="koulen">Koulen</option>
+		<option value="pliant">Pliant</option>
+		<option value="montserrat">Montserrat</option>
+		<option value="oswald">Oswald</option>
+		<option value="robotoslab">Roboto Slab</option>
+		<option value="pixelify">Pixelify Sans</option>
 	</select>
 	<p class="mt-2 mb-1 text-xl">Secondary Font:</p>
 	<select name="Fonts" bind:value={secondaryFont}>
-		<option value="koulen">Koulen</option>
 		<option value="nunito">Nunito</option>
+		<option value="koulen">Koulen</option>
+		<option value="pliant">Pliant</option>
+		<option value="montserrat">Montserrat</option>
+		<option value="oswald">Oswald</option>
+		<option value="robotoslab">Roboto Slab</option>
+		<option value="pixelify">Pixelify Sans</option>
 	</select>
 
 	<p class="mt-2 mb-1 text-xl">Main font size:</p>
-	<p>{Math.floor(((fontSize - 50) / 50) * 100)}%</p>
+	<p>{Math.floor(((fontSize - 50) / 50) * 100)}</p>
 	<input type="range" step="5" min="50" max="100" class="mb-2" bind:value={fontSize} />
 	<div class="divider mb-2"></div>
 

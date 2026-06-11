@@ -14,18 +14,21 @@
 		lon = localStorage.getItem('lon');
 	});
 
-	//Very basic location fetch function :D
+	//GPS location fetching! :D
 	async function fetchLocation() {
-		const url = 'https://ipapi.co/json/';
-		try {
-			const response = await fetch(url);
-			const data = await response.json();
-
-			lat = data.latitude;
-			lon = data.longitude;
-			console.log(lat, lon);
-		} catch {
-			console.log('Error');
+		if ('geolocation' in navigator) {
+			navigator.geolocation.getCurrentPosition(
+				(position) => {
+					lat = position.coords.latitude.toFixed(5);
+					lon = position.coords.longitude.toFixed(5);
+				},
+				(error) => {
+					console.error(error);
+					alert(error.code, error.message);
+				}
+			);
+		} else {
+			alert('This browser does not support automatic fetch.');
 		}
 	}
 
@@ -70,6 +73,10 @@
 		border-radius: 30px;
 		outline: none;
 		border: none;
+	}
+
+	button:hover {
+		transform: scale(1.1);
 	}
 	.coolButton {
 		background-color: var(--accentColour);
