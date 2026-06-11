@@ -166,10 +166,6 @@
 		gap: 10px;
 		align-items: flex-start;
 	}
-	.bubble {
-		width: 200px;
-		height: 200px;
-	}
 
 	.accentButton {
 		background-color: var(--accentColour);
@@ -180,6 +176,8 @@
 		font-weight: 600;
 		color: contrast-color(var(--accentColour));
 		border: 2px contrast-color(var(--accentColour)) solid;
+		padding: 3px 10px 5px 10px;
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
 	.grayedButton {
@@ -234,7 +232,8 @@
 		height: 30px;
 		border-radius: 30px;
 		display: flex;
-
+		padding: 3px 10px 5px 10px;
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 		justify-content: center;
 		align-items: center;
 	}

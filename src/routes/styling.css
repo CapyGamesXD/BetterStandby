@@ -79,8 +79,8 @@ p {
 }
 
 .bubble {
-	width: clamp(10vw, 30vw, 400px);
-	height: clamp(10vw, 50vh, 400px);
+	width: 200px;
+	height: 200px;
 	background-color: #d9d9d9;
 	border-radius: 20px;
 	margin-top: 10px;

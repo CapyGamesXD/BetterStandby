@@ -67,12 +67,15 @@
 <style>
 	button {
 		width: 200px;
-		height: 30px;
-		background-color: rgb(154, 52, 255);
+		height: 40px;
+		background-color: rgb(127, 114, 199);
 		color: white;
 		border-radius: 30px;
 		outline: none;
 		border: none;
+		padding: 3px 10px 5px 10px;
+
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
 	button:hover {
@@ -104,8 +107,9 @@
 
 	a {
 		background-color: var(--accentColour);
-		padding: 10px;
-		height: 30px;
+		padding: 3px 10px 5px 10px;
+
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 		border-radius: 30px;
 		display: flex;
 		color: rgb(0, 0, 0);

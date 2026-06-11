@@ -31,7 +31,7 @@
 	}
 </script>
 
-<div class="centerdiv">
+<div class="centerdiv" style="--accent: {accentColour}">
 	<h1 class="nunito thin subH">Welcome to</h1>
 	<h1 class="koulen">Better Standby</h1>
 	<div class="divider"></div>
@@ -93,9 +93,9 @@
 			</div>
 		</div>
 	{:else if page === 3}
-		<div class="slideAnim" style="--accent: {accentColour}">
+		<div class="slideAnim">
 			<p class="mt-2">Great choice! Now let's choose an accent colour!</p>
-			<input type="color" class="colourInput" bind:value={accentColour} />
+			<input type="color" class="colourInput mt-2" bind:value={accentColour} />
 			<button
 				onclick={() => {
 					page++;
@@ -104,17 +104,11 @@
 			>
 		</div>
 	{:else if page === 4}
-		<div class="slideAnim" style="--accent: {accentColour}">
+		<div class="slideAnim">
 			<p class="mt-2">
-				Almost done! <br /> If you want to customise further, all you need to do is tap on the screen!
-				Try it!
+				Almost done! <br /> If you want to customise further, all you need to do is tap on the time!
 			</p>
-			<button onclick={accept}>
-				<div class="bubble">
-					<div class="phone thin">19:23</div>
-					<div class="stand"></div>
-				</div>
-			</button>
+			<button class="changeyButton mt-2" onclick={accept}> Done! </button>
 		</div>
 	{/if}
 </div>
@@ -127,9 +121,24 @@
 		border-radius: 50px;
 		font-size: 20px;
 		font-weight: 600;
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
-	.changeyButton:hover {
+	.bubble {
+		width: 200px;
+		height: 200px;
+		background-color: #d9d9d9;
+		border-radius: 20px;
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: 0.4s;
+	}
+
+	.changeyButton:hover,
+	.greenBG:hover {
 		transform: scale(1.1);
 	}
 </style>
