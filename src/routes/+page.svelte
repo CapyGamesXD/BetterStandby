@@ -114,6 +114,9 @@
 </div>
 
 <style>
+	.centerdiv {
+		margin-bottom: 15px;
+	}
 	.changeyButton {
 		background-color: var(--accent);
 		width: 250px;

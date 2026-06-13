@@ -41,7 +41,6 @@
 </script>
 
 <div class="centerdiv" style="--accentColour: {accentColour}">
-	<a href="/customisation" class="mb-2">Cancel</a>
 	<a href="/customisation" class="mt-1 mb-2" onclick={saveChanges}>Save</a>
 	<h1 class="koulen">Settings</h1>
 	<div class="divider"></div>

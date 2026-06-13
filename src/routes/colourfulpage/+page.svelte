@@ -38,6 +38,9 @@
 </a>
 
 <style>
+	.fullcenterdiv {
+		overflow: hidden;
+	}
 	.hugeText {
 		color: var(--accent);
 		font-weight: 600;

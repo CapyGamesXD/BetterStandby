@@ -40,6 +40,9 @@
 </a>
 
 <style>
+	.fullcenterdiv {
+		overflow: hidden;
+	}
 	.hugeText {
 		color: white;
 		font-weight: 100;

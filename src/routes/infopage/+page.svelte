@@ -105,6 +105,10 @@
 </a>
 
 <style>
+	.fullcenterdiv {
+		overflow: hidden;
+	}
+
 	.size {
 		font-size: 4vw;
 	}
