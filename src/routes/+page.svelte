@@ -73,8 +73,16 @@
 				>
 					<div class="bubble">
 						<div class="phone mt-0 mb-0">
-							<p class=" mt-0 mb-0">19:23</p>
-							<p class=" mt-0 mb-2 text-[10px]/0.5 text-green-300">15º</p>
+							<div class="minirow">
+								<p class=" koulen thin mt-0 mb-0 text-5xl font-normal">19:23</p>
+								<div class="leftAlign">
+									<div class="minidivider mt-1 mb-2"></div>
+									<p class="mt-0 mb-2 text-[10px]/0.5">Sun, 4 Jun</p>
+									<p class=" mt-0 mb-2 text-[10px]/0.5 text-green-300">15º</p>
+
+									<div class="minidivider"></div>
+								</div>
+							</div>
 						</div>
 
 						<div class="stand"></div>
@@ -86,7 +94,7 @@
 					}}
 				>
 					<div class="bubble">
-						<div class="phone"><p class=" text-green-300">19:23</p></div>
+						<div class="phone"><p class="green">19:23</p></div>
 						<div class="stand"></div>
 					</div>
 				</button>
@@ -114,6 +122,13 @@
 </div>
 
 <style>
+	.minirow {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+		align-items: flex-start;
+	}
+
 	.centerdiv {
 		margin-bottom: 15px;
 	}

@@ -34,10 +34,11 @@
 </script>
 
 <div class="centerdiv" style="--accentColour: {accentColour}">
-	<a href="/{page}" class="mb-2" onclick={saveChanges}>Save</a>
+	<a href="/{page}" class="save mt-5 mb-2" onclick={saveChanges}>Save</a>
 	<h1 class="koulen">Customisation</h1>
 	<div class="divider"></div>
 	<a class="accentButton mt-2" href="/settings" onclick={saveChanges}>Settings</a>
+	<a href="docs " class="regulara mt-2">About BetterStandby</a>
 	<p class="mt-1">Scroll to the bottom to preview</p>
 	<div class="row mt-0 mb-4">
 		<button
@@ -151,6 +152,24 @@
 </div>
 
 <style>
+	.regulara {
+		width: auto;
+		font-size: 13px;
+	}
+	.save {
+		background-color: var(--accentColour);
+		padding: 3px 10px 5px 10px;
+		width: 50px;
+		font-size: 13px;
+		border-radius: none;
+		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
+		border-radius: 20px;
+		display: flex;
+		color: rgb(0, 0, 0);
+		justify-content: center;
+		align-items: center;
+		color: contrast-color(var(--accentColour));
+	}
 	select {
 		outline: none;
 	}
@@ -169,27 +188,31 @@
 
 	.accentButton {
 		background-color: var(--accentColour);
-		width: 120px;
-		height: 50px;
-		border-radius: 50px;
-		font-size: 20px;
-		font-weight: 600;
+
 		color: contrast-color(var(--accentColour));
 
+		width: 100px;
+		height: 30px;
+
+		font-size: 13px;
+		border-radius: 15px;
+		outline: none;
+		border: none;
 		padding: 3px 10px 5px 10px;
+
 		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
 	.grayedButton {
 		background-color: rgb(73, 73, 73);
-		width: 120px;
-		height: 50px;
-		border-radius: 50px;
-		font-size: 20px;
-		font-weight: 600;
-		color: rgb(95, 95, 95);
 		color: contrast-color(var(--accentColour));
-
+		width: 100px;
+		height: 30px;
+		font-size: 13px;
+		border-radius: 15px;
+		outline: none;
+		border: none;
+		padding: 3px 10px 5px 10px;
 		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 	}
 
@@ -237,5 +260,9 @@
 		box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.163);
 		justify-content: center;
 		align-items: center;
+	}
+
+	.koulen {
+		font-size: 30px;
 	}
 </style>
