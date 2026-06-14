@@ -59,7 +59,7 @@
 <div style="--accentColour: {accentColour}">
 	<div class="fullcenterdiv" style="--accentColour: {accentColour}">
 		<div class="box">
-			<h1 class="koulen">Settings</h1>
+			<h1 class="koulen mt-2">Settings</h1>
 			<a href="/customisation" class="save" onclick={saveChanges}>Save</a>
 
 			<p class="latlon mt-2">Latitude:</p>
@@ -106,7 +106,7 @@
 		font-weight: 500;
 	}
 	.box {
-		width: 300px;
+		width: 320px;
 		background-color: rgb(219, 219, 219);
 		display: flex;
 		flex-direction: column;
