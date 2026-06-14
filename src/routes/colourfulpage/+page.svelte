@@ -6,13 +6,15 @@
 	let font = $state();
 	let fontSize = $state();
 	onMount(async () => {
+		document.body.style.backgroundColor = 'black';
+		document.body.classList.add('black');
 		font = localStorage.getItem('font') || 'nunito';
 		accentColour = localStorage.getItem('accentColour') || '#8ada93';
 		fontSize = localStorage.getItem('fontSize');
 
-		document.body.classList.add('black');
 		return () => {
 			document.body.classList.remove('black');
+			document.body.style.backgroundColor = 'white';
 		};
 	});
 

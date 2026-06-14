@@ -9,6 +9,8 @@
 	let fontSize = $state();
 
 	onMount(async () => {
+		document.body.classList.add('black');
+		document.body.style.backgroundColor = 'black';
 		font = localStorage.getItem('font') || 'nunito';
 		secondaryFont = localStorage.getItem('secondFont') || 'nunito';
 		accentColour = localStorage.getItem('accentColour') || '#8ada93';
@@ -17,9 +19,10 @@
 		lon = localStorage.getItem('lon');
 
 		getWeather();
-		document.body.classList.add('black');
+
 		return () => {
 			document.body.classList.remove('black');
+			document.body.style.backgroundColor = 'white';
 			clearInterval(dateInterval);
 			clearInterval(weatherInterval);
 		};

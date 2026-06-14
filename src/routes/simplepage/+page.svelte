@@ -6,12 +6,15 @@
 	let fontSize = $state();
 
 	onMount(async () => {
+		document.body.style.backgroundColor = 'black';
+		document.body.classList.add('black');
 		font = localStorage.getItem('font') || 'nunito';
 
 		fontSize = localStorage.getItem('fontSize') || 85;
-		document.body.classList.add('black');
+
 		return () => {
 			document.body.classList.remove('black');
+			document.body.style.backgroundColor = 'white';
 		};
 	});
 

@@ -22,6 +22,7 @@
 		localStorage.setItem('fontSize', fontSize);
 	}
 	onMount(() => {
+		document.body.style.backgroundColor = 'white';
 		accentColour = localStorage.getItem('accentColour') || '#8ada93';
 		originalColour = accentColour;
 
